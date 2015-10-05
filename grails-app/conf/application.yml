@@ -2,7 +2,7 @@
 grails:
     profile: web
     codegen:
-        defaultPackage: hansteen.proto
+        defaultPackage: hansteen.core
 info:
     app:
         name: '@info.app.name@'
@@ -54,6 +54,9 @@ grails:
         defaultScope: singleton
     converters:
         encoding: UTF-8
+    hibernate:
+        cache:
+            queries: false
     views:
         default:
             codec: html

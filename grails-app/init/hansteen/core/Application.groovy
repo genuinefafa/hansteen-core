@@ -1,4 +1,4 @@
-package hansteen.proto
+package hansteen.core
 
 import grails.boot.GrailsApp
 import grails.boot.config.GrailsAutoConfiguration

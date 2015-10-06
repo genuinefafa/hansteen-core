@@ -10,3 +10,7 @@ build/
 .settings
 .classpath
 .asscache
+.jruby-container/
+.sass-cache/
+grails-app/assets/bower_components/
+out/

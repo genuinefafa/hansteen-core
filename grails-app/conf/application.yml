@@ -68,6 +68,8 @@ grails:
                 scriptlets: html
                 taglib: none
                 staticparts: none
+    assets:
+        excludes: ['mixins/*.scss', 'tiny_mce/src/*.js', '**/*.spec.js', '**/*.spec.coffee']
 ---
 hibernate:
     cache:

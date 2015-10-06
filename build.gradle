@@ -38,6 +38,17 @@ ext {
 assets {
     minifyJs = true
     minifyCss = true
+    enableSourceMaps = true
+    configOptions = [:]
+
+    //minifyOptions = [
+    //        languageMode: 'ES5',
+    //        targetLanguage: 'ES5', //Can go from ES6 to ES5 for those bleeding edgers
+    //        optimizationLevel: 'SIMPLE',
+    //        angularPass: true // Can use @ngInject annotation for Angular Apps
+    //]
+
+    excludes = ['mixins/*.scss', 'tiny_mce/src/*.js', '**/*.spec.js']
 }
 
 repositories {
@@ -70,7 +81,7 @@ dependencies {
     compile "org.grails.plugins:scaffolding"
 
     runtime "org.grails.plugins:asset-pipeline"
-    assets "com.bertramlabs.plugins:less-asset-pipeline:2.5.4"
+    assets "com.bertramlabs.plugins:sass-asset-pipeline:2.3.1"
     assets "com.bertramlabs.plugins:coffee-asset-pipeline:2.0.7"
 
 
